@@ -1,0 +1,37 @@
+.header {
+  /* 定義本區塊為彈性容器 */
+  display: flex;
+  /* 定義彈性容器內副軸至中 */
+  align-items: center;
+  /* 將剩餘空間分配合理分配到元素中間 */
+  justify-content: space-between;
+  /* 設定區塊靠外行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
+  margin: auto;
+  /* 設定區塊靠內行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
+  padding-top: 60px;
+  /* 定義寬度 */
+  width: 80%;
+  /* 設定本容器的高度，vh 為視窗的高度 */
+  height: 100vh;
+}
+
+.header h1 {
+  /* 設定區塊靠外行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
+  margin-bottom: 1.5rem;
+}
+
+.header__cover {
+  /* 隱藏多餘內容 */
+  overflow: hidden;
+  /* 設定區塊寬度 */
+  width: 520px;
+  /* 設定區塊高度 */
+  height: 520px;
+  /* 設定區塊圓角的參數 */
+  border-radius: 50%;
+}
+
+.header__cover img {
+  /* 設定區塊寬度 */
+  width: 100%;
+}

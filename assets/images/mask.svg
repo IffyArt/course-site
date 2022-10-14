@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1441"
+     height="1441"
+     viewBox="0 0 1441 1441">
+
+  <style>
+    svg {
+      animation: rotate 100s linear infinite;
+    }
+
+    @keyframes rotate {
+      form {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <g id="Group_3"
+     data-name="Group 3"
+     transform="translate(-38 382)">
+    <g id="Group_2500"
+       data-name="Group 2500"
+       transform="translate(38 -382)">
+      <g id="Ellipse_8"
+         data-name="Ellipse 8"
+         transform="translate(341 341)"
+         fill="none"
+         stroke="#bd11fa"
+         stroke-width="1"
+         stroke-dasharray="18">
+        <circle cx="379"
+                cy="379"
+                r="379"
+                stroke="none" />
+        <circle cx="379"
+                cy="379"
+                r="378.5"
+                fill="none" />
+      </g>
+      <g id="Ellipse_9"
+         data-name="Ellipse 9"
+         transform="translate(170 170)"
+         fill="none"
+         stroke="#46c2ff"
+         stroke-width="1"
+         opacity="0.52">
+        <circle cx="550.5"
+                cy="550.5"
+                r="550.5"
+                stroke="none" />
+        <circle cx="550.5"
+                cy="550.5"
+                r="550"
+                fill="none" />
+      </g>
+      <g id="Ellipse_10"
+         data-name="Ellipse 10"
+         fill="none"
+         stroke="#46c2ff"
+         stroke-width="1"
+         opacity="0.1">
+        <circle cx="720.5"
+                cy="720.5"
+                r="720.5"
+                stroke="none" />
+        <circle cx="720.5"
+                cy="720.5"
+                r="720"
+                fill="none" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+/* 給予 class="footer" 得標籤樣式 */
+.footer {
+  /* 設定區塊靠內行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
+  padding: 20px;
+  /* 定義區塊背景顏色 */
+  background-color: #46c2ff;
+  /* 定義內容文字顏色 */
+  color: #ffffff;
+  /* 設定內容文字顯示方式，center 為至中顯示 */
+  text-align: center;
+}

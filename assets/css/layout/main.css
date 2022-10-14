@@ -1,0 +1,33 @@
+.main {
+  /* 定義本區塊為彈性容器 */
+  display: flex;
+  /* 設定區塊為 column 的排序方式 */
+  flex-direction: column;
+}
+
+.main__row {
+  /* 定義本區塊為彈性容器 */
+  display: flex;
+}
+
+.main__row--light-mode {
+  /* 定義區塊背景顏色 */
+  background-color: white;
+  /* 定義內容文字顏色 */
+  color: #21212e;
+}
+
+.main__container {
+  /* 定義本區塊為行內的彈性容器 */
+  display: inline-flex;
+  /* 設定副軸分配方式置中 */
+  align-items: center;
+  /* 設定區塊靠外行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
+  margin: auto;
+  /* 設定區塊靠內行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
+  padding: 5rem 0;
+  /* 定義最大寬度 */
+  max-width: 1200px;
+  /* 定義寬度 */
+  width: 80%;
+}

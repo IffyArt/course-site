@@ -1,0 +1,14 @@
+.btn {
+  /* 定義本區塊為行內的彈性容器 */
+  display: inline-flex;
+  /* 定義內容間距上下為 16 左右為 40 */
+  padding: 16px 40px;
+  /* 定義區塊的陰影屬性 */
+  border: #46c2ff solid 1px;
+  /* 定義區塊圓角參數 */
+  border-radius: 10px;
+  /* 定義內容文字顏色 */
+  color: #46c2ff;
+  /* 取消文字裝飾(a 標籤預設會有下底線) */
+  text-decoration: none;
+}

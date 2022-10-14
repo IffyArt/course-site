@@ -1,0 +1,23 @@
+.shiny-btn {
+  /* 定義本區塊為行內的彈性容器 */
+  display: inline-flex;
+  /* 定義內容間距上下為 16 左右為 40 */
+  padding: 16px 40px;
+  /* 定義區塊圓角參數 */
+  border-radius: 10px;
+  /* 定義區塊背景為漸層顏色 (linear-gradient) */
+  background-image: linear-gradient(to right, #bd11fa, #46c2ff);
+  /* 定義區塊的陰影屬性 */
+  box-shadow: 0px 0px 15px 0px #822eff;
+  /* 定義內容文字顏色 */
+  color: white;
+  /* 取消文字裝飾(a 標籤預設會有下底線) */
+  text-decoration: none;
+}
+
+.shiny-btn--large {
+  /* 設定文字大小 */
+  font-size: 1.2em;
+  /* 定義內容間距上下為 16 左右為 50 */
+  padding: 16px 50px;
+}

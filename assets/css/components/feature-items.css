@@ -1,0 +1,25 @@
+.feature-items {
+  /* 定義本區塊為彈性容器 */
+  display: flex;
+}
+
+.feature-items > li {
+  /* 定義 flex 的屬性在空間足夠或不足的情況下，都等比例分配剩餘空間，並設定基礎寬度為 220px */
+  flex: 1 220px;
+  /* 設定區塊靠外行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
+  margin: 10px;
+  /* 設定內容文字顯示方式，center 為至中顯示 */
+  text-align: center;
+}
+
+.feature-items__icon {
+  /* 定義文字的大小 */
+  font-size: 8rem;
+}
+
+.feature-items__title {
+  /* 設定區塊靠外行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
+  margin-bottom: 1rem;
+  /* 定義文字的大小 */
+  font-size: 2rem;
+}

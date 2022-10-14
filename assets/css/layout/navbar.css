@@ -1,0 +1,56 @@
+/* 給予 class="navbar" 的標籤樣式 */
+
+.navbar {
+  /* 定義本區塊的定位方式為絕對定位 */
+  position: absolute;
+  /* 定義若區塊與其他區塊重疊時，排序顯示的參數 */
+  z-index: 100;
+  /* 定義本區塊為彈性容器 */
+  display: flex;
+  /* 定義彈性容器內副軸至中 */
+  align-items: center;
+  /* 定義彈性容器內的項目自動分配位子 */
+  justify-content: space-between;
+  /* 設定區塊靠外行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
+  margin: 25px 10%;
+  /* 定義寬度 */
+  width: 80%;
+}
+
+/* 定義 class 為 navbar 底下全部的 a 標籤 */
+.navbar a {
+  /* 定義元素靠右間距 */
+  margin-left: 1rem;
+  /* 取消文字裝飾(a 標籤預設會有下底線) */
+  text-decoration: none;
+}
+
+.navbar__logo {
+  /* 定義文字的顏色 */
+  color: #46c2ff;
+  /* 定義文字的重量(粗細度) */
+  font-weight: bold;
+  /* 定義文字的大小 */
+  font-size: 1.2rem;
+}
+
+.navbar__link {
+  /* 定義本區塊為行內的彈性容器 */
+  display: inline-flex;
+  /* 定義本區塊或平分到的行內剩餘空間 */
+  flex: 1;
+  /* 定義彈性容器內的項目靠到容器尾部 */
+  justify-content: flex-end;
+}
+
+.navbar__link a {
+  /* 定義文字為白色 */
+  color: white;
+}
+
+.navbar__button {
+  /* 定義本區塊為行內的彈性容器 */
+  display: inline-flex;
+  /* 定義元素靠右間距 */
+  margin-left: 30px;
+}
