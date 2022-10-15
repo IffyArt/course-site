@@ -9,8 +9,6 @@
   display: flex;
   /* 定義彈性容器內副軸至中 */
   align-items: center;
-  /* 定義彈性容器內的項目自動分配位子 */
-  justify-content: space-between;
   /* 設定區塊靠外行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
   margin: 25px 10%;
   /* 定義寬度 */

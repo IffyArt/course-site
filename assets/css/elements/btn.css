@@ -11,4 +11,13 @@
   color: #46c2ff;
   /* 取消文字裝飾(a 標籤預設會有下底線) */
   text-decoration: none;
+  /* 新增轉換屬性 */
+  transition: color 300ms, background-color 300ms;
+}
+
+.btn:hover {
+  /* 定義區塊背景顏色 */
+  background-color: #46c2ff;
+  /* 定義內容文字顏色 */
+  color: white;
 }

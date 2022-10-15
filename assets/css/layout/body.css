@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+
 body {
   /* 定義區塊背景顏色 */
   background-color: #21212e;
@@ -15,8 +16,8 @@ body {
 body::before {
   /* 設定訂位方式為絕對定位 */
   position: absolute;
-  /* 設定元素是一個區塊 */
-  display: block;
+  /* 設定 z 軸的位子在最後面 */
+  z-index: -1;
   /* 設定區塊寬度 */
   width: 190vh;
   /* 設定區塊高度 */

@@ -1,6 +1,8 @@
 .feature-items {
   /* 定義本區塊為彈性容器 */
   display: flex;
+  /* 設定 flexbox 的換行機制啟用 */
+  flex-wrap: wrap;
 }
 
 .feature-items > li {
