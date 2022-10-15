@@ -32,9 +32,25 @@ body::before {
   transform: translate(-50%, -50%);
 }
 
+@media all and (max-width: 556px) {
+  body::before {
+    /* 設定區塊寬度 */
+    width: 190vw;
+    /* 設定區塊高度 */
+    height: 190vw;
+  }
+}
+
 h1 {
   /* 設定文字顏色 */
   color: #46c2ff;
   /* 設定文字大小 */
   font-size: 4rem;
+}
+
+@media all and (max-width: 556px) {
+  h1 {
+    /* 設定文字大小 */
+    font-size: 3rem;
+  }
 }

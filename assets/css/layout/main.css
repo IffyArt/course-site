@@ -22,6 +22,7 @@
   display: inline-flex;
   /* 設定副軸分配方式置中 */
   align-items: center;
+  flex-wrap: wrap;
   /* 設定區塊靠外行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
   margin: auto;
   /* 設定區塊靠內行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
@@ -30,4 +31,19 @@
   max-width: 1200px;
   /* 定義寬度 */
   width: 80%;
+}
+
+.main__container img {
+  max-width: 440px;
+  width: 100%;
+}
+
+.main__aside {
+  flex: 1 220px;
+  margin: 10px;
+}
+
+.main__title {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
 }

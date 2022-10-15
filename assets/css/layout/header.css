@@ -3,6 +3,7 @@
   display: flex;
   /* 定義彈性容器內副軸至中 */
   align-items: center;
+  flex-wrap: wrap;
   /* 將剩餘空間分配合理分配到元素中間 */
   justify-content: space-between;
   /* 設定區塊靠外行距，只給單一參數會設定上下左右，兩個參數會是「上下」「左右」，四個參數會是「上」「右」「下」「左」 */
@@ -33,6 +34,12 @@
   height: 520px;
   /* 設定區塊圓角的參數 */
   border-radius: 50%;
+}
+
+@media all and (max-width: 556px) {
+  .header__cover {
+    display: none;
+  }
 }
 
 .header__cover img {

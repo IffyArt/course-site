@@ -15,12 +15,46 @@
   width: 80%;
 }
 
+@media all and (max-width: 966px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 40px;
+    max-width: 320px;
+    height: 100vh;
+    background-color: #33335f;
+    transition: transform 300ms;
+    transform: translateX(-100%);
+  }
+
+  .navbar.active {
+    transform: translateX(0);
+  }
+}
+
 /* 定義 class 為 navbar 底下全部的 a 標籤 */
 .navbar a {
+  flex: 1;
   /* 定義元素靠右間距 */
   margin-left: 1rem;
+  text-align: center;
   /* 取消文字裝飾(a 標籤預設會有下底線) */
   text-decoration: none;
+}
+
+@media all and (max-width: 966px) {
+  .navbar a {
+    display: inline-block;
+    margin-bottom: 1rem;
+    /* 定義元素靠右間距 */
+    margin-left: 0;
+    font-size: 1.25em;
+  }
 }
 
 .navbar__logo {
@@ -32,6 +66,14 @@
   font-size: 1.2rem;
 }
 
+@media all and (max-width: 966px) {
+  .navbar__logo {
+    margin-bottom: 20px;
+    /* 定義文字的大小 */
+    font-size: 2rem;
+  }
+}
+
 .navbar__link {
   /* 定義本區塊為行內的彈性容器 */
   display: inline-flex;
@@ -39,6 +81,13 @@
   flex: 1;
   /* 定義彈性容器內的項目靠到容器尾部 */
   justify-content: flex-end;
+}
+
+@media all and (max-width: 966px) {
+  .navbar__link {
+    flex: none;
+    flex-direction: column;
+  }
 }
 
 .navbar__link a {
@@ -51,4 +100,16 @@
   display: inline-flex;
   /* 定義元素靠右間距 */
   margin-left: 30px;
+}
+
+.navbar__button li {
+  display: inline-flex;
+}
+
+@media all and (max-width: 966px) {
+  .navbar__button {
+    flex-direction: column;
+    /* 定義元素靠右間距 */
+    margin-left: 0;
+  }
 }
