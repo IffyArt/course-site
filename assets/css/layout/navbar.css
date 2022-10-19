@@ -94,9 +94,7 @@
 
 @media all and (max-width: 966px) {
   .navbar__link {
-    /*  */
     flex: none;
-    /*  */
     flex-direction: column;
   }
 }
