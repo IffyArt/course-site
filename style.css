@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  padding: 2rem;
+  width: 100%;
+  /* background: linear-gradient(0deg, #fe70d8, #3713c1); */
+  background-color: #2c3e50;
+}
+
+.headerText {
+  color: white;
+}
+
+.headerTitle1 {
+  font-size: 1.5rem;
+}
+
+.headerTitle2 {
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #ecf0f1;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/*Nav Style*/
+.menu {
+  /* margin: 0 auto; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+}
+
+.menu > li,
+.menu > a {
+  display: inline-block;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+
+.menu a:hover {
+  background-color: #f34949;
+  color: #fff;
+}
+
+/* Submenu Styles */
+.submenu {
+  position: absolute;
+  left: 0;
+  display: none;
+  background-color: #2c3e50;
+}
+
+/*Show Menu on hover*/
+
+.menu li:hover > .submenu {
+  display: block;
+  animation: slideup 0.3s ease;
+}
+
+/* Animation Keyframes */
+
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .menu {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* 手機版，.menu想要載靠左一點，可是沒反應 */
+  .menu > li {
+    /* 老師： margin-left 這邊給負數，正常來說都會進行位移(我這邊有)，如果你的裝置沒有的話，還可以嘗試使用 transform 的方法 */
+    margin-left: -20px;
+    padding-left: 0;
+  }
+
+  /* 下面的程式是將 submenu 做展開，理論上這裡做一個展開的控制器會比較好，另外在手機上因為 hover 就會直接觸發點擊，因此子父層的結構需要想一下要怎麼做 */
+  .menu > li > ul.submenu {
+    position: relative;
+    display: block;
+    margin-left: 1rem;
+  }
+}
