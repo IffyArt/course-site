@@ -19,41 +19,5 @@
 
 /* 定義 class 為 feature-items 的相關樣式 */
 @import url('components/feature-items.css');
-
-.navbar-menu {
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-}
-
-.navbar-menu > span {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 3px;
-  border: 5px;
-  background-color: white;
-  transition: margin 300ms, transform 300ms;
-}
-
-.navbar-menu > span:nth-child(1) {
-  margin-top: -20px;
-}
-
-.navbar-menu > span:nth-child(3) {
-  margin-top: 20px;
-}
-
-.navbar-menu.active > span:nth-child(1),
-.navbar-menu.active > span:nth-child(3) {
-  margin-top: 0;
-  transform: rotate(135deg);
-}
-.navbar-menu.active > span:nth-child(2) {
-  transform: rotate(-135deg);
-}
+/* 定義 class 為 navbar-trigger 的相關樣式 */
+@import url('components/navbar-trigger.css');
