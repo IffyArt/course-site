@@ -4,33 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap demo</title>
-    <!--Import Google Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-
-    <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0/dist/css/materialize.min.css"
-    />
+    <title>ES6</title>
+    <style></style>
   </head>
   <body>
-    <main class="container">
-      <section class="row">
-        <article class="col s12">
-          <a onclick="M.toast({text: 'I am a toast'})" class="btn">Toast!</a>
-        </article>
-      </section>
-    </main>
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0/dist/js/materialize.min.js"></script>
-    <script>
-      M.AutoInit();
-      M.toast({ text: 'I am a toast!' });
-    </script>
+    <article class="todo-list">
+      <form class="todo-list__form">
+        <input type="text" id="todoListValue" placeholder="請輸入代辦事項" />
+        <button type="button">新增</button>
+      </form>
+      <ul class="todo-list__items">
+        <li>1.代辦事項文字<span class="todo-list__remove">刪除</span></li>
+      </ul>
+    </article>
+    <script src="assets/script/index.js"></script>
   </body>
 </html>
