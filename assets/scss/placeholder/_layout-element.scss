@@ -1,0 +1,39 @@
+%layout-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+
+  @include pad-under-width() {
+    width: 90%;
+  }
+}
+
+%layout-padding_base {
+  box-sizing: border-box;
+  padding: $block-padding_big;
+
+  @include pad-width() {
+    padding: $block-padding_base;
+  }
+  @include phone-width() {
+    padding: $block-padding_small;
+  }
+}
+
+%layout-margin_main {
+  margin: auto $margin_big;
+
+  @include phone-width() {
+    margin: 0 $margin_base;
+  }
+}
+
+%layout-absolute_full {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}

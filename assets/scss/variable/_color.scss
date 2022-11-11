@@ -1,0 +1,35 @@
+$color_white: #ffffff;
+$color_black: #000000;
+
+// 強調色
+$color_accent-dark: #0e335e;
+$color_accent: #2c45c4;
+$color_accent-light: #6c8ec3;
+
+// 輔助色
+$color_auxiliary: #6bcdb2;
+$color_auxiliary-light: #5b70ce;
+
+// 主色
+$color_primary: #eff0f2;
+$color_primary-dark: #d8dbdf;
+
+// 文字顏色
+$color_text-accent: #2d2b2b;
+$color_text-color: #535151;
+$color_text-color-light: #c4c4c4;
+
+// 邊框色彩
+$color_line: #ededed;
+$color_line-light: #fbfbfb;
+
+// 其他色彩
+$color_security: #5eb67d;
+$color_notice: #fdce63;
+$color_like: #af6037;
+
+// 漸層色
+$color-gradient: $color_accent, $color_auxiliary;
+
+// 陰影
+$box-shadow_element: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
